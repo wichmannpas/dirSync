@@ -4,6 +4,11 @@
 
 configDir="/home/$(echo $USER)/.dirSync/"
 
+if [ "$1" == "-h" ] || [ "$1" == "" ]; then
+  echo "Usage: dirSync profilename (config directory specified inside this shell script)"
+  exit 0
+fi
+
 # try to load configuration
 source $configDir/$1
 
