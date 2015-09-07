@@ -9,5 +9,6 @@ source $configDir/$1
 
 inotifywait -r -m $dir -e moved_to -e modify -e attrib |
     while read path action file; do
+	echo "upload"
 	rsync -r $rsyncParams $dir $remote
     done
