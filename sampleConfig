@@ -1,0 +1,5 @@
+#!/bin/sh
+# Sample configuration file for dirSync
+
+dir="/dir/to/be/watched/"
+remote="user@host:/path/to/remote/dir/"
