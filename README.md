@@ -12,7 +12,12 @@ Requirements
 Usage
 -----
 
-Adapt the lines 5 and 6 which contain the configuration to suit your needs. Run the script whenever you want the directory to be interactively synchronized and kill it (using i.e. *^C*) to stop sync.
+Create the directory *.dirSync* inside your home directory and place configuration files in there. You can use the file *sampleConfig* of the source tree as an example.
+
+Run the script whenever you want a directory to be interactively synchronized. Specify the name of your configuration file as parameter.
+Kill it (using i.e. *^C*) to stop sync.
+
+You may want to place this script somewhere in your path, i.e. at /usr/local/bin, in order to be able to start the tool without the necessity to specify the whole part each time you run the script.
 
 License
 -------
